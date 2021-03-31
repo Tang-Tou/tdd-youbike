@@ -55,7 +55,7 @@ RSpec.describe Bike do
     it "超過 8 小時，於第 8 小時起將以每 30 分鐘 40 元計價。" do
       bike = Bike.new
       bike.time_nonuser(620)
-      expect(bike.cost_nonuser).to be 440000
+      expect(bike.cost_nonuser).to be 440
     end
   end
 end
