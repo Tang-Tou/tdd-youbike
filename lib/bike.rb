@@ -1,8 +1,11 @@
 class Bike
   # 初始化的原因是要讓他一開始就表示他使用了30分鐘，後續的會被定義成其他值
-  def initialize(user = nil)
+  def initialize(user)
     @time = 30
     @user = user
+    @is_member = user.is_member
+    # @now_time = Time.now
+    
   end 
 
   def time(time)
@@ -10,7 +13,7 @@ class Bike
   end
 
   def cost
-    if @user
+    if @is_member
       if @time <= 30
         return 5
       end

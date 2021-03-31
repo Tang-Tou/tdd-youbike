@@ -1,14 +1,5 @@
 require './lib/user'
 
-# 會員
-# 登入
-# 加入會員
-# 忘記密碼
-
-
-# 非會員
-# 單次租車
-
 RSpec.describe User do
   # pending '試著動手寫一些測試吧！'
 
