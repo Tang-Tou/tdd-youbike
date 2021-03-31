@@ -11,6 +11,4 @@ class User
     @is_member = true
   end
 
- 
-
 end
